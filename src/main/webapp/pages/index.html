@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!--
+    Autor:Floriceli Gonzalez Ruiz                                         
+    Fecha creación: 25 de abril del 2022.                                     
+    Fecha actualización: 1 de mayo del 2022.                                
+    Descripción: index     
+-->
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="../webjars/bootstrap/5.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../webjars/fontawesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../webjars/jquery/3.6.0/dist/jquery.min.js">
+        <link rel="stylesheet" href="../resources/css/index.css">
+        <link rel="stylesheet" href="../resources/js/index.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>TODO supply a title</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        
+        
+        <header class="header" > 
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mainbg  " >
+  <a class="navbar-brand" href="#">Floreria</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">  
+    <a class="nav-item nav-link" href="../UsuarioServletController?action=crearForm"><i class="fa fa-user-circle" aria-hidden="true"></i>
+Crear</a>
+    <a class="nav-item nav-link" href="../UsuarioServletController?action=listar"><i class="fa fa-address-book" aria-hidden="true"></i>
+Listar</a>
+    <a class="nav-item nav-link" href="../UsuarioServletController?action=galeria" ><i class="fa fa-grav" aria-hidden="true"></i>
+Galeria</a>
+  
+    <a class="nav-item nav-link" href="#"></a>
+    </div>
+  </div>
+</header>
+        
+    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active"></div>
+        <div id="target" class="carousel-item"></div>
+        <div class="carousel-item"></div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+        
+  
+   <div class="row">
+    <section id="about">
+      <div id='foto'>
+            <img class="img-responsive center-block" id="tiago-foto" src="data:image/jpeg;base64,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" alt="Tiago Fuelber"/>
+      </div>
+      <div id="article">
+        <h1>Arreglos florales</h1>
+      </div>
+    </section>
+  </div>
+<!-- GALERIA----------------------------------------------- -->
+
+  <div id='galery' class='row'>
+    <section id="portfolio" class='row'>
+      <h2 class='text-center'></h2>
+
+      <ul class="galeria text-center list-unstyled" id="galeria">
+        <a href="/weather_app"  target="_blank">
+          <li>
+            <figure class="foto-legenda">
+              <img class="img-responsive" src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/como-se-limpia-un-florero-1.jpg" />
+              <figcaption>
+                <h1>Dia de las madres</h1>
+              </figcaption>
+            </figure>
+          </li>
+        </a>
+
+        <a href="https://www.yaakunflores.com/uploads/arreglos/caja-blanca-con-100-rosas-en-forma-de-corazon-y-flores-finas-mi-corazon-es-tuyo.jpg"  target="_blank">
+          <li>
+            <figure class="foto-legenda">
+              <img class="img-responsive" src="https://conflores.com.mx/wp-content/uploads/2020/06/rosas-en-caja.png" />
+              <figcaption>
+                <h1>Centros de mesa</h1>
+              </figcaption>
+            </figure>
+          </li>
+        </a>
+          
+        <a href="/randomquotemachine"  target="_blank">
+          <li>
+            <figure class="foto-legenda">
+              <img class="img-responsive" src="https://decoratrix.estaticos.com.es/img/fotos_post/128075/p3YIOKU22LVTT3cm8YVcdig6yhLwTK3p1Au5sUYOZmU5Zgjrl1GkiMh5bsr0.jpg" />
+              <figcaption>
+                  <h1>Ramo de novia</h1>
+              </figcaption>
+            </figure>
+          </li>
+        </a>
+        
+        <a href="/timferriss_tribute"  target="_blank">
+          <li>
+            <figure class="foto-legenda">
+              <img class="img-responsive" src="https://www.lizfloreria.com/content/images/thumbs/0003213_ramo-15-tulipanes-rosa-codigo-1426.png" />
+              <figcaption>
+                <h1>Ramo de novia</h1>
+              </figcaption>
+            </figure>
+          </li>
+        </a>
+        
+        <a href="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/como-se-limpia-un-florero-1.jpg"  target="_blank">
+          <li>
+            <figure class="foto-legenda">
+              <img class="img-responsive" src="https://i.pinimg.com/originals/83/f0/fe/83f0fe27356416f01428f219758551cc.jpg" />
+              <figcaption>
+                <h1>Decoración salón</h1>
+              </figcaption>
+            </figure>
+          </li>
+        </a>
+      </ul>
+    </section>
+  </div>
+
+<div class="footer" style="background: #cc66ff">
+
+
+<!-- CONTATO----------------------------------------------------- -->
+
+  <div id="contact" class="row">
+    <section>
+      <h2 class="text-center">Contactos</h2>
+
+      <div id='social-links' class='text-center'>
+        <ul>
+          <a href="https://www.facebook.com/tiago.fuelber">
+            <li>
+              <h3><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</h3>
+            </li>
+          </a>
+          <a href="https://github.com/TiagoFuelber">
+            <li>
+              <h3><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</h3>
+            </li>
+          </a>
+          <a href="https://br.linkedin.com/in/tiagofuelber">
+            <li>
+              <h3><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</h3>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+
+</div>
+<!--Header ends-->
+
+
+
+        
+        
+       
+    </body>
+</html>
+

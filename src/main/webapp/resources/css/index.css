@@ -1,0 +1,150 @@
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+
+}
+
+
+.navbar-mainbg{
+	background-color: #5161ce;
+	padding: 0px;
+}
+
+
+.row {
+margin-bottom: -20px;
+margin-top: -20px;
+background:#EAC7CC;
+
+}
+/* about */
+#about {
+/* margin-top: 3.5em;*/
+background: #CBC0D3;
+/*background-image: url('https://h7.alamy.com/compes/2aj063m/nueve-flores-negras-aisladas-sobre-fondo-blanco-decorativo-ilustracion-de-diseno-2aj063m.jpg');*/
+background-size: cover;
+
+}
+#foto {
+/*padding-top: 2em;*/
+}
+#tiago-foto {
+border-radius: 50%;
+}
+div#article h1{
+height: 100%;
+text-align: center;
+padding: 1em;
+color: white;
+background: #CBC0D3;
+/*background-color: rgba(0,0,0,.7);  */
+}
+
+
+/* portfólio */
+div#galery {
+/*background-color: #999999; */
+background: #CBC0D3;
+}
+section#portfolio {
+margin: 0 auto;
+}
+section#portfolio li {
+padding: 1em;
+list-style: none;
+text-align: center;
+display: inline-block;
+}
+section#portfolio img {
+  width: auto;
+  max-width: 500px;
+}
+
+
+/* contato */
+#contact {
+background-color: #222;
+color:white;
+}
+#contact a {
+color:#ddd;
+}
+#contact h3:hover {
+color:#87CEFA;
+}
+#contact ul li{
+display: inline-block;
+margin:1em;
+}
+/* Hover da foto */
+figure.foto-legenda {
+/* position: relative é para a legenda da foto não ficar voando*/
+position: relative;
+/*cria uma borda*/
+border: 8px solid white;	
+/* cria uma sombra na caixa */
+box-shadow: 1px 1px 4px black;
+
+}
+
+/*define o tamanho da imagem*/
+figure.foto-legenda img{
+width: 100%;
+}
+
+figure.foto-legenda figcaption {
+/*faz a legenda desaparecer*/
+opacity: 0;
+/*faz a legenda ficar sempre em cima na foto*/
+position: absolute;
+top: 0px;
+/* faz a legenda aparecer na foto*/
+background-color: rgba(0,0,0,.4);
+/*letra branca*/
+color: white;
+/*borda preta ocupar todo o espaço da imagem*/
+width: 100%;
+height: 100%;
+/* cria um espaço dentro da legenda*/
+padding: 10px;
+/* não deixa a sombra sair fora do box */
+box-sizing: border-box;
+/* efeito de transição discreto - faz a opacidade levar 1s para aparecer*/
+transition: opacity 1s;
+}
+
+/* faz a legenda aparecer só quando passar o mouse por cima da foto */
+figure.foto-legenda:hover figcaption {
+opacity: 1;
+}
+/* links */
+
+
+
+.carousel .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel .carousel-item:first-of-type {
+    background-image: url("https://cdn.domestika.org/c_fit,dpr_1.0,f_auto,t_base_params,w_610/v1606857050/content-items/006/370/109/linh-le-4ADrWAWYnT4-unsplash-original.jpg?1606857050");
+}
+
+.carousel .carousel-item:nth-of-type(2) {
+    background-image: url("https://coronasfunebresmonterrey.com/wp-content/uploads/2020/09/Arreglo-Funebre-hasta-siempre.jpg");
+}
+
+.carousel .carousel-item:last-of-type {
+    background-image: url("https://cdn.domestika.org/c_fit,dpr_1.0,f_auto,t_base_params,w_610/v1606857050/content-items/006/370/109/linh-le-4ADrWAWYnT4-unsplash-original.jpg?1606857050");
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+

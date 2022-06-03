@@ -1,0 +1,286 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 may 2022, 14:27:18
+    Author     : labso09
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora');
+
+
+body {
+  background: #CBC0D3;
+}
+
+/* div box styling */
+.container {
+  margin: auto;
+  width: 650px;
+  height: 550px;
+  position: relative;
+}
+
+.welcome {
+  background: #f6f6f6;
+  width: 650px;
+  height: 415px;
+  position: absolute;
+  top: 25%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+.pinkbox {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  background: #EAC7CC;
+  width: 320px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 2px 0 10px rgba(0,0,0,.1);
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
+
+.nodisplay {
+  display:none;
+  transition: all .5s ease;
+}
+
+.leftbox, .rightbox {
+  position: absolute;
+  width: 50%;
+  transition: 1s all ease;
+}
+
+.leftbox {
+  left: -2%;
+}
+.rightbox {
+  right: -2%;
+}
+
+/* font & button styling */
+h1 {
+  font-family: Lora;
+  text-align: center;
+  margin-top: 95px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  font-size: 2em;
+  letter-spacing: 8px;
+}
+
+.title {
+  font-family: 'Lora';
+  color: #8E9AAF;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 20%;
+}
+.desc {
+  margin-top: -8px;
+}
+.account {
+  margin-top: 45%;
+  font-size: 10px;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: .7em;
+  letter-spacing: 2px;
+  color: #8E9AAF;
+  text-align: center;
+}
+
+span {
+  color: #EAC7CC;
+}
+
+.flower {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 46%;
+  left: 29%;
+  opacity: .7;
+}
+
+.smaller {
+  width: 90px;
+  height: 100px;
+  top: 48%;
+  left: 38%;
+  opacity: .9;
+}
+
+button {
+  padding: 12px;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  border-radius: 10px;
+  margin: auto;
+  outline: none;
+  display: block;
+  &:hover {
+    background: #EAC7CC;
+    color: #f6f6f6;
+    transition: background-color 1s ease-out;
+  }
+}
+
+.button {
+  margin-top: 3%;
+  background: #f6f6f6;
+  color: darken(#EAC7CC, 20%);
+  border: solid 1px #EAC7CC;
+}
+
+/* form styling */
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7px;
+}
+.more-padding{
+  padding-top: 35px;
+  input {
+    padding: 12px;
+  }
+  .submit {
+    margin-top: 45px;
+  }
+}
+.submit {
+  margin-top: 25px;
+  padding: 12px;
+  border-color: darken(#EAC7CC, 20%);
+  &:hover {
+    background: #CBC0D3;
+    border-color: darken(#CBC0D3, 5%);
+  }
+}
+
+input {
+  background: #EAC7CC;
+  width: 65%;
+  color: darken(#EAC7CC, 20%);
+  border: none;
+  border-bottom: 1px solid rgba(#f6f6f6, 0.5);
+  padding: 9px;
+  margin: 7px;
+  &::placeholder {
+    color: rgba(#f6f6f6, 1);
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+  &:focus {
+    color: darken(#EAC7CC, 20%);
+    outline: none;
+    border-bottom: 1.2px solid rgba(darken(#EAC7CC, 20%), 0.7);
+    font-size: 1em;
+    transition: .8s all ease;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+label {
+  font-family: 'Open Sans';
+  color: darken(#EAC7CC, 20%);
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.checkbox {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+  left: -62px;
+  top: 5px;
+}
+
+input[type=checkbox] {
+  width: 7px;
+  background: darken(#EAC7CC, 20%);
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+  color: darken(#EAC7CC, 20%);
+  transition: .5s all ease;
+}
+
+
+
+
+
+
+/*gg*/
+.menuicon {
+  text-align: rigth;
+  font-size: 0;
+}
+
+.menuicon a {
+  position: relative;
+  display: inline;
+  *display: inline;
+  zoom: 1;
+  width: 300px;  
+  height: 300px;
+  text-align: rigth;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 black;
+  text-decoration: none;
+  background: #9933cc;
+  vertical-align: top;
+  -webkit-transition: .3s all;
+  -moz-transition: .3s all;
+  transition: .3s all;
+  
+}
+.menuicon a .fa {
+  position: relative;
+  top: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid white;
+  font-size: 40px;
+}
+.menuicon a .title {
+  font-size: 20px;
+  line-height: 60px;
+}
+.menuicon a:hover {
+  -webkit-transform: scale(0.80,0.80);
+  -moz-transform: scale(0.80,0.80);
+  transform: scale(0.80,0.80);
+}
+.menuicon a:nth-of-type(odd) {
+  background: #BF9830;
+}
+.menuicon a:first-child {
+  background: #0099cc;
+  width: 100px;
+}
+.menuicon a:first-child .fa {
+  border: 0;
+  font-size: 60px;
+}
+.menuicon a:first-child .title {
+  font-size: 30px;
+  line-height: 20px;
+  font-style: italic;
+}

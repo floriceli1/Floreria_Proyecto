@@ -1,0 +1,141 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 may 2022, 8:26:32
+    Author     : labso09
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+ background: #CBC0D3;
+ font-family: 'Roboto Condensed', sans-serif;
+ 
+}
+h1 {
+ 
+  text-align: center;
+
+  text-transform: uppercase;
+  color: #f6f6f6;
+
+  font-family: 'Lora';
+  color: #8E9AAF;
+
+
+
+  text-align: center;
+
+
+}
+
+
+.galeria-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+  box-shadow: 0px 3px 10px #17202A;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  padding: 20px;
+  grid-gap: 15px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 500px) {
+  .mov {
+    grid-column: span 2 
+   
+  }
+
+  .cam {
+   grid-row: span 2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*gg*/
+.menuicon {
+  text-align: rigth;
+  font-size: 0;
+}
+
+.menuicon a {
+  position: relative;
+  display: inline;
+  *display: inline;
+  zoom: 1;
+  width: 300px;  
+  height: 300px;
+  text-align: rigth;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 black;
+  text-decoration: none;
+  background: #9933cc;
+  vertical-align: top;
+  -webkit-transition: .3s all;
+  -moz-transition: .3s all;
+  transition: .3s all;
+  
+}
+.menuicon a .fa {
+  position: relative;
+  top: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid white;
+  font-size: 40px;
+}
+.menuicon a .title {
+  font-size: 20px;
+  line-height: 60px;
+}
+.menuicon a:hover {
+  -webkit-transform: scale(0.80,0.80);
+  -moz-transform: scale(0.80,0.80);
+  transform: scale(0.80,0.80);
+}
+.menuicon a:nth-of-type(odd) {
+  background: #BF9830;
+}
+.menuicon a:first-child {
+  background: #0099cc;
+  width: 100px;
+}
+.menuicon a:first-child .fa {
+  border: 0;
+  font-size: 60px;
+}
+.menuicon a:first-child .title {
+  font-size: 30px;
+  line-height: 20px;
+  font-style: italic;
+}
+
+
